@@ -13,14 +13,14 @@ const images = [
   },
 ];
 
-let stringInHTML = "";
+let stringInHTML = '';
 
-images.forEach(elem => {
+images.forEach((elem) => {
   stringInHTML += `<li> <img src="${elem.url}" alt="${elem.alt}" width=300px></li>`;
 });
 
-const gallery = document.querySelector(".gallery");
+const gallery = document.querySelector('.gallery');
 
-gallery.insertAdjacentHTML("afterbegin",stringInHTML);
+gallery.insertAdjacentHTML('afterbegin', stringInHTML);
 
 console.log(gallery);
