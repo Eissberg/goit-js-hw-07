@@ -18,6 +18,8 @@ for (let item of ingredients) {
 
 const ulForAdd = document.querySelector('ul#ingredients');
 
-listOfLi.forEach((item) => {
-  ulForAdd.append(item);
-});
+ulForAdd.append(...listOfLi);
+
+// listOfLi.forEach((item) => {
+//   ulForAdd.append(item);
+// });
